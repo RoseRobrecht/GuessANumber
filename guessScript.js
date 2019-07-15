@@ -18,4 +18,6 @@ function sendData(form) {
         }
         guessNum = form.inputbox.value;
     }
+
+    console.log("Great Job! That's the answer!");
 }
