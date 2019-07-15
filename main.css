@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    transition: .5s ease-in all;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
