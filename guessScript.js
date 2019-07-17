@@ -1,23 +1,28 @@
 var randNum = Math.round( Math.random() * 99 ) + 1;
 
-function sendData(form) {
-    var guessNum = form.inputbox.value;
+sendData = (form) => {
+    var guessNum = parseInt(form.inputbox.value, 10);
     form.inputbox.value = ""; 
+    
+    let text = `You guessed: ${guessNum}`;
+    document.getElementById("response").innerHTML = text
 
-    if (guessNum==randNum) {
-        console.log("You got it!");
+    if (guessNum===randNum) {
+        var rightOrWrong = "You got it! Good job.";
+        highLow = "";
+        document.getElementsByTagName('body')[0].className = 'winner'
     }
-
-    while(guessNum!=randNum) {
-        console.log("Sorry, that's not the answer");
+    else {
+        rightOrWrong = "Sorry, that's not the answer";
         if (guessNum > randNum) {
-            console.log("You need to guess lower");
+            var highLow  = "That was a little high, you need to guess lower";
         }
         else {
-            console.log("You need to guess lower");
+            highLow  = "That was a little low, you need to guess higher";
         }
         guessNum = form.inputbox.value;
     }
 
-    console.log("Great Job! That's the answer!");
+    document.getElementById("right-or-wrong").innerText = rightOrWrong;
+    document.getElementById("high-or-low").innerText = highLow;
 }

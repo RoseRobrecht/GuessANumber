@@ -19,3 +19,6 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+.winner {
+    background-image: url ("https://giphy.com/gifs/party-donald-trump-time-l0HlHEH3XL0fcLjZ6");
+}
