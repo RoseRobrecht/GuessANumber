@@ -1,4 +1,5 @@
 var randNum = Math.round( Math.random() * 99 ) + 1;
+console.log(randNum);
 
 sendData = (form) => {
     var guessNum = parseInt(form.inputbox.value, 10);
