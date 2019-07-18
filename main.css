@@ -20,7 +20,11 @@ main {
     flex-direction: column;
 }
 .winner {
-    background-image: url ("https://giphy.com/gifs/party-donald-trump-time-l0HlHEH3XL0fcLjZ6");
-    font-family: "Stencil Std", fantasy;
+    background-color: red;
+    color: darkblue;
+}
+
+.winner, p {
+    font-family: "Sirin Stencil", serif;
     font-size: 80px;
 }
