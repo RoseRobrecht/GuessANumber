@@ -26,7 +26,7 @@ main {
     color: darkblue;
 }
 
-.winner, p {
+p.winner {
     font-family: "Sirin Stencil", serif;
     font-size: 80px;
 }
