@@ -13,7 +13,7 @@ sendData = (form) => {
     if (guessNum===randNum) {
         var rightOrWrong = "You got it! Good job. <br> You guessed a total of " + guessCount + " times!";
         highLow = "";
-        document.getElementsByTagName('body')[0].className = 'winner'
+        var youWon = "winner"
     }
     else if ((guessNum >= 1) && (guessNum <= 100)) {
         rightOrWrong = "Sorry, that's not the answer";
@@ -25,6 +25,7 @@ sendData = (form) => {
         }
         guessNum = form.inputbox.value;
         guessCount += 1
+        youWon = "nope"
     }
     else {
         rightOrWrong = "The number you guessed is out of range."
@@ -34,4 +35,5 @@ sendData = (form) => {
 
     document.getElementById("right-or-wrong").innerText = rightOrWrong;
     document.getElementById("high-or-low").innerText = highLow;
+    document.getElementsByTagName('body')[0].className = youWon
 }
