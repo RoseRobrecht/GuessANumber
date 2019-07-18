@@ -11,8 +11,6 @@ html,body{
 body {
     background: white;
     transition: .5s ease-in all;
-    font-family: serif;
-    font-size: 35;
 }
 
 main {
@@ -22,7 +20,7 @@ main {
     flex-direction: column;
 }
 .winner {
-    background-color: red;
+    background-image: url("https://media.giphy.com/media/js0pKUv19A9HrrupHe/giphy.gif");
     color: darkblue;
 }
 
