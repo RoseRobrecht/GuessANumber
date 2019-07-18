@@ -11,6 +11,8 @@ html,body{
 body {
     background: white;
     transition: .5s ease-in all;
+    font-family: serif;
+    font-size: 35;
 }
 
 main {
